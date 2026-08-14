@@ -27,7 +27,7 @@ Examples:
 - `fix: correct refund timeline copy - was showing wrong day count`
 Not acceptable: `wip`, `updates`, `stuff`, `misc`
 ### Escalation path (triggers immediately, not at deadline)
-- **No response to a direct WhatsApp ping within 2 hours** during agreed work windows → the person who pinged flags it to the whole group.
+- **No response to a direct WhatsApp ping within 3 hours** during agreed work windows → the person who pinged flags it to the whole group.
 - **Zero visible activity (commits + board movement) for 2+ days** → whoever notices pings the individual directly, cc's the group.
 - No response within 24 hours of that ping → team lead reassigns the task and logs the incident — this feeds the Day 4 checkpoint and the Peer Reliability Index.
 - Disagreement on approach → 10-min discussion in the group chat; if unresolved, the task owner makes the final call on their own task.
