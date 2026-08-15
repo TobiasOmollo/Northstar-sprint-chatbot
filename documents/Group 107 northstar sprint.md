@@ -8,7 +8,7 @@
 ####
 **Date signed:** 14/08/2026
 ####
-**Members:** Tobias Omollo, Danlon Situma, Lucas Madedo,  Mbithi Modercai
+**Members:** Tobias Omollo, Danlon Situma, Lucas Madedo,  Mbithi Modercai, Joy Kimani
  
 ### Communication
 - Primary channel: WhatsApp — Group 107: https://chat.whatsapp.com/C11HrM1zNm4BTFhEY4h4xY
@@ -62,8 +62,9 @@ Every task tagged: Owner | Priority (H/M/L) | Est. hours (≤4) | DoD
 **Suggested split across 4 members (adjust to actual headcount/strengths):**
 - Tobias: Tasks 1, 3, 9
 - Danlon: Tasks 2, 5, 11
-- Lucas: Tasks 4, 6, 10
-- Modercai: Tasks 7, 8, 12
+- joy : Tasks 4, 6
+- Modercai: Tasks 7, 12
+- Lucas: Tasks 8, 10
 ---
  
 ## 3. Go-Live Readiness Note — Structure
