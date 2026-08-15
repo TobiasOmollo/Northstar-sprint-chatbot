@@ -86,3 +86,60 @@ Date: 15/08/2026  · Team: Group 107
 - Who to contact for questions during a short handoff window (if applicable)
 **5. Suggested next steps (not our scope, but worth flagging)**
 - e.g. "Connect to real order DB instead of mock JSON" / "Add stock-availability as ticket type 3" / "Add fuzzy matching for typo tolerance"
+
+## 4. Expected Project Architecture
+ 
+Current state:
+ 
+```
+Northstar-sprint-chatbot/
+├── .git/
+├── LICENSE
+├── mock-order/
+│   └── mock_order_dataset.csv
+└── documents/
+    └── Group 107 northstar sprint.md
+```
+ 
+Target state — every new file maps to a board task number, so whoever owns a task knows exactly where to commit:
+ 
+```
+Northstar-sprint-chatbot/
+├── .git/
+├── LICENSE
+├── README.md                          ← Task 10 (setup/run instructions)
+│
+├── mock-order/
+│   └── mock_order_dataset.csv         ← Task 1 (done)
+│
+├── src/
+│   ├── orderLookup.js                 ← Task 3 (order-lookup function)
+│   ├── returnEligibility.js           ← Task 2 + 5 logic (eligibility check)
+│   │
+│   ├── intents/
+│   │   ├── orderStatusIntent.js       ← Task 4 ("where is my order" matcher)
+│   │   └── returnRefundIntent.js      ← Task 6 (returns/refund matcher)
+│   │
+│   ├── chatbot.js                     ← Task 8 (wires intents + flows + UI together)
+│   │
+│   └── ui/
+│       ├── index.html                 ← Task 7 (chat input box + response display)
+│       ├── style.css                  ← Task 7
+│       └── app.js                     ← Task 7 + 9 (UI logic + fallback response)
+│
+├── tests/
+│   └── qa-log.md                      ← Task 11 (10 test phrases, pass/fail log)
+│
+└── documents/
+    ├── Group 107 northstar sprint.md  ← charter + board (this file)
+    ├── return-eligibility-rules.md    ← Task 2 (written eligibility rule)
+    └── go-live-readiness-note.md      ← Task 12 (final 1-page note)
+```
+ 
+**Notes for the team:**
+- `mock-order/` stays as-is — don't rename it mid-sprint, that just creates noisy commits.
+- `returnEligibility.js` is listed separately from `orderLookup.js` because Task 2 (the *rule*, e.g. "30 days from delivery") and Task 5 (the *flow* that applies it) are owned by different people on our split — keeping the logic in its own file means both can work without blocking each other.
+- Anyone adding a file outside this structure (a scratch/test file, a personal draft) should prefix it clearly (e.g. `scratch-`) or keep it out of the PR, so the final repo tree matches this architecture cleanly for grading.
+- Commit message when this structure gets built out, e.g.:
+  `chore: scaffold project folders per expected architecture - gives every task owner a clear file target`
+ 
