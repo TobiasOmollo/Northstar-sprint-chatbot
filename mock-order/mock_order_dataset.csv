@@ -1,0 +1,16 @@
+ID,Item,Status,Ship Date,Delivered Date
+ORD1001,Wireless Mouse,Delivered,2026-07-20,2026-07-22
+ORD1002,Bluetooth Speaker,Shipped,2026-08-10,
+ORD1003,Laptop Stand,Delivered,2026-06-01,2026-06-05
+ORD1004,Desk Lamp,Pending,,
+ORD1005,Phone Case,Cancelled,,
+ORD1006,Running Shoes,Delivered,2026-07-25,2026-07-28
+ORD1007,Yoga Mat,Shipped,2026-08-12,
+ORD1008,Coffee Maker,Delivered,2026-05-10,2026-05-14
+ORD1009,Backpack,Pending,,
+ORD1010,Headphones,Delivered,2026-08-01,2026-08-03
+ORD1011,Kitchen Blender,Cancelled,,
+ORD1012,Office Chair,Shipped,2026-08-13,
+ORD1013,Table Lamp,Delivered,2026-07-14,2026-07-16
+ORD1014,Water Bottle,Delivered,2026-04-01,2026-04-05
+ORD1015,Notebook Set,Shipped,2026-08-14,
