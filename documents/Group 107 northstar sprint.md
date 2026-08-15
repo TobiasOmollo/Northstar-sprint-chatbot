@@ -66,10 +66,10 @@ Every task tagged: Owner | Priority (H/M/L) | Est. hours (≤4) | DoD
 - Modercai: Tasks 7, 8, 12
 ---
  
-## 3. Go-Live Readiness Note — Structure (keep to 1 page)
+## 3. Go-Live Readiness Note — Structure
  
 **Northstar Support Deflection MVP — Go-Live Readiness Note**
-Date: 15/08/2026 (or final submission date) · Team: Group 107
+Date: 15/08/2026  · Team: Group 107
  
 **1. What it does today**
 - Handles order-status and returns/refunds questions via a rule-based chatbot / decision-tree flow.
