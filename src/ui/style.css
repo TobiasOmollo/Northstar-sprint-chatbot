@@ -1,0 +1,254 @@
+/* style.css – Task 7 UI styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background: #f4f6fa;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.dashboard {
+  max-width: 900px;
+  width: 100%;
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+  overflow: hidden;
+  padding: 2rem 2rem 2.5rem;
+  transition: 0.2s;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.brand i {
+  font-size: 2rem;
+  color: #0b2b5c;
+  background: #eef2f9;
+  padding: 0.5rem;
+  border-radius: 14px;
+}
+
+.brand h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #0b2b5c;
+}
+
+.brand span {
+  font-weight: 400;
+  color: #4a5b7a;
+  font-size: 0.9rem;
+  margin-left: 0.2rem;
+}
+
+.subhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.subhead p {
+  color: #2c3e5c;
+  background: #f0f4fe;
+  padding: 0.4rem 1rem;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.subhead i {
+  margin-right: 6px;
+  color: #1d4ed8;
+}
+
+.chat-panel {
+  background: #f9fafc;
+  border-radius: 1.4rem;
+  padding: 1.5rem 1.5rem 0.25rem;
+  border: 1px solid #e9edf4;
+}
+
+.response-area {
+  background: white;
+  border-radius: 1.2rem;
+  padding: 1.25rem 1.5rem;
+  min-height: 120px;
+  max-height: 260px;
+  overflow-y: auto;
+  margin-bottom: 1.25rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #1f2a44;
+}
+
+.response-area .empty-state {
+  color: #8b9ab5;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.response-area .empty-state i {
+  font-size: 1.3rem;
+  color: #b3c2db;
+}
+
+.response-area .bot-message {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.response-area .bot-message i {
+  color: #1d4ed8;
+  background: #e6edfe;
+  padding: 0.4rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.quick-actions button {
+  background: white;
+  border: 1px solid #dbe0e9;
+  padding: 0.5rem 1.2rem;
+  border-radius: 40px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #1f2a44;
+  cursor: pointer;
+  transition: 0.15s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+}
+
+.quick-actions button:hover {
+  background: #eef3fc;
+  border-color: #b0c4e0;
+  transform: scale(0.97);
+}
+
+.quick-actions button i {
+  margin-right: 6px;
+  color: #3b5a8a;
+}
+
+.input-row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  background: white;
+  padding: 0.4rem 0.4rem 0.4rem 1.2rem;
+  border-radius: 60px;
+  border: 1px solid #d8e0ec;
+  transition: 0.2s;
+}
+
+.input-row:focus-within {
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15);
+}
+
+.input-row input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.7rem 0;
+  font-size: 0.95rem;
+  background: transparent;
+  color: #0f1a33;
+}
+
+.input-row input::placeholder {
+  color: #94a9c9;
+  font-weight: 400;
+}
+
+.input-row button {
+  background: #0b2b5c;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: 0.15s;
+  white-space: nowrap;
+}
+
+.input-row button:hover {
+  background: #1a3f74;
+  transform: scale(0.97);
+}
+
+.policy-note {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: #6b7f9f;
+  border-top: 1px solid #e6ecf5;
+  padding-top: 1.25rem;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.policy-note i {
+  margin: 0 4px;
+  color: #8da0c2;
+}
+
+.highlight-badge {
+  background: #d9e5fc;
+  color: #10316b;
+  font-weight: 500;
+  padding: 0.1rem 0.6rem;
+  border-radius: 30px;
+  font-size: 0.75rem;
+}
+
+.response-area .msg-item {
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #f0f3f9;
+  padding-bottom: 0.5rem;
+}
+
+.response-area .msg-item:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.flex-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+}
